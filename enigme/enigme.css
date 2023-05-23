@@ -1,0 +1,886 @@
+@font-face {
+    font-family: "cantarell";
+    src: url("./police/Cantarell-Regular.ttf");
+}
+@font-face {
+    font-family: "beyno";
+    src: url("./police/BEYNO.ttf");
+}
+@font-face {
+    font-family:"panthera";
+    src: url("./police/panthera.otf");
+}
+@font-face {
+    font-family: "wakandaF";
+    src: url("./police/wakanda-forever-regular.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    
+    background-image: url("ASSETS/arriere_plan.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+}
+/*animation fade in*/
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+h1{
+    font-family: "beyno";
+    font-weight: lighter;
+    font-size: 68px;
+    color: #9E91B7;
+}
+h2{
+    font-family: "wakandaF";
+    color: #9E91B7;
+    font-size: 36px;
+    font-weight: lighter;
+}
+p{
+    font-family: "cantarell";
+    font-size: 16px;
+}
+/*design des scrollsiders*/
+body .bordure{
+    position: fixed;
+    height: 60vh;
+    left: 35px;
+    border-left: 3px solid #9E91B7 ;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+body .bordure1{
+    height: 40vh;
+    left: 60px;
+    border-left: 3px solid #9E91B7 ;
+    position: fixed;
+    /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+}
+body .iconBordure1{
+    position: fixed;
+    left: 50px;
+    top: 235px;
+    margin-top: 15px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure1:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+body .iconBordure2{
+    position: fixed;
+    left: 50px;
+    top: 285px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure2:hover{
+    filter: invert(100%) sepia(12%) saturate(99%) hue-rotate(241deg) brightness(110%) contrast(101%);
+}
+body .iconBordure3{
+    position: fixed;
+    left: 50px;
+    top: 315px;
+}
+.iconBordure3:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+body .iconBordure4{
+    position: fixed;
+    left: 50px;
+    top: 350px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure4:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+
+
+/*animation fade in*/
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+/*PARTIE HEADER*/
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;   
+}
+.navbar a {
+    color: white;
+    font-size: 20px;
+    padding-top: 25px ;
+    padding-bottom: 10px;
+    font-family: "beyno";
+}
+.navbar .saynaLogo:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+/*effet hover de menu navbar lorsque le souris survol un element*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;  
+    list-style-type: none; 
+    padding-top: 30px; 
+    padding-left: 100px;
+       
+}
+.menu li{
+    padding-left: 50px;
+}
+.menu a{
+    width: 60%;
+    padding-left: 10px;
+}
+.menu a:hover {
+    border-bottom: 1px solid white;
+}
+.prio a{
+    width: 10px;
+    height: 60%;
+    color: #9E91B7;
+    border-bottom: 1px solid white;  
+}
+.prio:hover{
+border-bottom: none;
+}
+
+/*partie bas du menu header*/
+.partieHaut{
+    width: 80%;
+    margin: 0 auto;
+}
+.partieHaut .partieGauche img {
+    position: absolute;
+    right: 500px;
+    margin-top: -200px;
+    width: 80vw;
+    height: 150vh;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.partieHaut .partieDroite{
+    width: 75%;
+    margin-left: 400px;
+    padding-bottom: 400px;
+}
+.partieDroite .textDeco{
+    width: 80%;
+    padding-top: 125px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.textDeco p{
+    padding-left: 150px;
+    padding-top:185px;
+    text-align: justify;
+    padding-bottom: 120px;
+}
+.textDeco h1{
+    padding-left: 50px;
+    padding-top: 50px;
+    text-align:justify;
+}
+.prouvetxt{
+    padding-top: 50px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+
+.partieDroite .trait{
+    position: absolute;
+    right: 0px;
+    width: 48%;
+    height: 26px;
+    padding-top: 22px;
+
+}
+/*design de la partie bas*/
+.partieBas{
+ width: 70%;
+ margin: 0 auto;
+ /*animation fade in*/
+ opacity: 0;
+ transform: translateX(-100%);
+ animation: fade-in 1s forwards;
+}
+.lesReponses{
+    display: flex;
+}
+.reponse{
+    padding-top: 80px;
+    width: 50%;
+}
+.partieBas .Titre{
+    width: 60%;
+}
+.reponse .lesAlphabets{
+    width: 70%;
+}
+.reponse .alphabet{
+    padding-top: 25px;
+}
+.reponse .question{
+    padding-top: 200px;
+}
+.reponse input[type="text"]{
+    width: 520px;
+    height: 56px;
+    margin-top: 15px;
+    border-radius: 38px;
+    padding: 0 25px;
+    border: 1px solid #F2CEF2;
+    background-color: transparent;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.reponsetxt::placeholder{
+    color: #F2CEF2;
+}
+.reponse .send{
+    text-align: center;
+}
+.reponse input[type="submit"]{
+    width: 174px;
+    height: 54px;
+    border-radius: 18px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    border: 1px solid ;
+    background-color:#F2CEF2;
+    border: none; 
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;  
+}
+.reponse input[type="submit"]:hover{
+    box-shadow: #F2CEF2 0px 0px 20px;
+}
+/*design des placeholder*/
+::-webkit-input-placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+::-moz-placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+::-ms-input-placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+::placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+/*placeholder pour zone de text*/
+
+.lesReponses .textDeco1{
+    width: 55%;
+    text-align:center;
+    padding-top: 190px;
+    padding-left: 100px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.textDeco1 .savoir{
+    padding-bottom: 30px;
+}
+/*partie image qui entoure savais tu* et description en haut */
+.entoure1{
+    width: 47vw;
+    height: 60vh;
+    position: absolute;
+    bottom: -1250px;
+    right: 100px; 
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.entoure{
+    position: absolute;
+    width: 55vw;
+    height: 85vh;
+    top: 425px;
+    right: 45px;  
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+
+
+
+/*PARTIE FOOTER*/
+.allFoot{
+    background-image: url(ASSETS/back_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.allFoot .contentFoot{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    display: flex;
+
+}
+/*partie gauche de footer*/
+.contentFoot .Left{
+  width: 40%;
+  margin: 250px auto;
+  
+  /*animation fade in*/
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fade-in 1s forwards;
+}
+.contentFoot .Left :hover{
+    transform: scale(1.2);
+}
+.Left .logoC{
+    position: absolute;
+    padding-left: 60px;
+}
+.Left .logoM{
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+/*partie à droite du footer*/
+.contentFoot .Right{
+    width: 80%;
+    margin: 250px auto;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.Right .top{
+    width: 100%;
+    display: flex; 
+    padding-left: 100px;  
+}
+.top .gauche{
+    padding-top: 10px;
+}
+.gauche .theLink{
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+}
+.theLink a{
+    color: white;
+    font-family:"cantarell";
+    font-weight: lighter;
+    padding-left: 10px;
+}
+.theLink a:hover{
+    border-bottom: 1px solid white;
+}
+.gauche .pagetxt{
+    font-size: "cantarell";
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+.gauche .pp{
+    font-size: 16px;
+}
+.top .droite{
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.droite .retrouver{
+    font-family:"cantarell" ;
+    font-size: 22px;
+}
+.droite .theLogo{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.theLogo img:hover{
+    transform: scale(1.2);
+}
+ .down{
+    position: absolute;
+    padding-top: 150px;
+    margin-left: 50px;
+    display: flex;
+    font-size: 22px;
+}
+.down p{
+    font-family: "cantarell";
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 50px;
+}
+.down .liste{
+    text-decoration: none;
+    display: flex;
+}
+.liste li{
+    padding-right: 15px;
+    margin-left: 15px;
+    font-family: "cantarell";
+    font-size: 13px;
+}
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:768px) {
+    /*bas du header*/
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    p{
+        font-size: 13px;
+    }
+    
+    /*partie scrollside*/
+    body .bordure{
+        position: fixed;
+        height: 60vh;
+        left: 25px;
+        border-left: 2px solid #9E91B7 ;
+    }
+    body .bordure1{
+        height: 40vh;
+        left: 47px;
+        border-left: 2px solid #9E91B7 ;
+        position: fixed;
+    }
+    body .iconBordure1{
+        position: fixed;
+        left: 40px;
+        top: 275px;
+        margin-top: 15px;
+    }
+    body .iconBordure2{
+        position: fixed;
+        left: 40px;
+        top: 330px;
+    }
+    body .iconBordure3{
+        position: fixed;
+        left: 40px;
+        top: 365px;
+    }
+    body .iconBordure4{
+        position: fixed;
+        left: 40px;
+        top: 400px;
+    }
+    /*partie header*/
+    .navbar{
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        text-decoration: none;   
+    }
+    /*effet hover de menu navbar lorsque le souris survol un element*/
+    .menu li{
+        padding-left: 20px;
+    }
+    .menu a{
+        width: 40%;
+        padding-left: 10px;
+    }
+    .bas{
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .bas .presentation{
+        width: 80%;
+        margin: 0 auto;
+        padding-right: 30px;
+        padding-top: 800px;   
+    }
+    
+    .presentation h2{
+        padding-top: 20px;
+    }
+    .presentation .description{
+        width: 55%;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+    .bas .imageBlack{
+        position: absolute;
+        left: 150px;
+        top: 50px;
+    }
+    .imageBlack img{
+        width: 53vw;
+        height: 100vh;
+    }
+    
+    /*partie heroheader*/
+    .heroHeader{
+        width: 60%;
+        height: auto;
+        margin-top: 200px;
+        display: inline-block;
+        margin-bottom: 200px;
+        background-color: #021740;
+    }
+    .heroHeader img{
+        width: 100%;
+        height: 40vh;
+    }
+    .heroHeader .killmonger{
+        padding-left: 40px;
+        display: inline-block;
+    }
+    .heroHeader .okoye{
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        width: 50vw;
+        display: inline-block;
+    }
+    .heroHeader .autre img{
+        height: 40vh;
+        width: 80%;
+        padding-left: 40px;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .Description{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+
+
+
+   /*partie main*/
+    .partieHaut{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .partieHaut .partieGauche img {
+        position: absolute;
+        right: 100px;
+        margin-top: 10px;
+        width: 60vw;
+        height: 70vh;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .partieHaut .partieDroite{
+        width: 80%;
+        margin-left: 50px;
+        padding-bottom: 400px;
+    }
+    .partieDroite .textDeco{
+        padding-top: 400px;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .textDeco p{
+        padding-top:150px;
+        text-align: justify;
+        padding-bottom: 120px;
+    }
+    .textDeco h1{
+        padding-left: 50px;
+        padding-top: 50px;
+        text-align:justify;
+    }
+    .prouvetxt{
+        padding-top: 50px;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    
+    .partieDroite .trait{
+        position: absolute;
+        right: 0px;
+        width: 48%;
+        height: 26px;
+        padding-top: 22px;
+    
+    }
+    /*design de la partie bas*/
+    .partieBas{
+     width: 75%;
+     margin: 0 auto;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+    }
+    .lesReponses{
+        display: inline-block;
+    }
+    .reponse{
+        width: 76%;
+    }
+    .partieBas .Titre{
+        width: 60%;
+    }
+    .reponse .lesAlphabets{
+        width: 70%;
+    }
+    .reponse .alphabet{
+        padding-top: 25px;
+    }
+    .reponse .question{
+        padding-top: 150px;
+    }
+    .reponse input[type="text"]{
+        width: 520px;
+        height: 56px;
+        margin-top: 15px;
+        border-radius: 38px;
+        padding: 0 25px;
+        border: 1px solid #F2CEF2;
+        background-color: transparent;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .reponsetxt::placeholder{
+        color: #F2CEF2;
+    }
+    .reponse .send{
+        text-align: center;
+    }
+    .reponse input[type="submit"]{
+        width: 174px;
+        height: 54px;
+        border-radius: 18px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        border: 1px solid ;
+        background-color:#F2CEF2;
+        border: none; 
+    }
+    
+    
+    .lesReponses .textDeco1{
+        width: 60%;
+        text-align:center;
+        padding-left: 100px;
+        padding-bottom: 100px;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .textDeco1 .savoir{
+        padding-bottom: 30px;
+    }
+    /*partie image qui entoure savais tu* et description en haut */
+    .entoure1{
+        width: 50vw;
+        height: 60vh;
+        position: absolute;
+        bottom: -1850px;
+        right: 250px; 
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .entoure{
+        position: absolute;
+        width: 65vw;
+        height: 75vh;
+        top: 550px;
+        right: 145px;  
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    
+
+
+
+
+    /*PARTIE FOOTER*/
+    .allFoot{
+        background-image: url(ASSETS/back_footer.png);
+        background-size: cover;
+        background-repeat: no-repeat;   
+     }
+     .allFoot .contentFoot{
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 150px;
+        display: inline-block;
+    
+     }
+    /*partie gauche de footer*/
+     .contentFoot .Left{
+      width: 60%;
+      padding-top: 100px;
+      margin: 0 auto; 
+      
+     }
+     .Left .logoC{
+        position: absolute;
+        padding-left: 60px;
+     }
+     .Left .logoM{
+        position: absolute;
+        padding-top: 150px;
+        padding-left: 150px;
+     }
+    /*partie à droite du footer*/
+     .contentFoot .Right{
+        width: 88%;
+        margin: 250px auto;
+        text-align: center;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+     }
+     .Right .top{
+        display: inline-block;   
+     }
+     .top .gauche{
+        width: 90%;
+        padding-left: 100px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 200px;
+     }
+     .gauche .pagetxt{
+        font-size: "cantarell";
+        padding-bottom: 10px;
+        font-size: 22px;
+     }
+    
+     .top .droite{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
+     }
+     .droite .retrouver{
+        font-family:"cantarell" ;
+        font-size: 22px;
+     }
+     .droite .theLogo{
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+        justify-content: space-between;
+     }
+     .theLogo img:hover{
+        transform: scale(1.2);
+     }
+     .down{
+        width: 100%;
+        padding-top: 50px;
+        margin-left: 150px;
+        display: flex;
+     }
+     .down p{
+        font-family: "cantarell";
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+     }
+     .down .liste{
+        text-decoration: none;
+        display: flex;
+     }
+     .liste li{
+        padding-right: 10px;
+        margin-left: 10px;
+        font-family: "cantarell";
+        font-size: 12px;
+     }
+        
+    } 
+    
+
+
+
+
+
+
+
+
+

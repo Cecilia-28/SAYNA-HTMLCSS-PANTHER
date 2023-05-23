@@ -1,0 +1,957 @@
+@font-face {
+    font-family: "cantarell";
+    src: url("./police/Cantarell-Regular.ttf");
+}
+@font-face {
+    font-family: "beyno";
+    src: url("./police/BEYNO.ttf");
+}
+@font-face {
+    font-family:"panthera";
+    src: url("./police/panthera.otf");
+}
+@font-face {
+    font-family: "wakandaF";
+    src: url("./police/wakanda-forever-regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: url("ASSETS/arriere_plan.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+body h1{
+    font-family: "panthera";
+    color: #9E91B7 ;
+    font-size: 68px;
+}
+h2{
+    font-family: "beyno";
+    color: #9E91B7 ;
+    font-size: 32px;
+    font-weight: lighter;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+p{
+    font-family: "cantarell";
+    font-size: 16px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+body .bordure{
+    position: fixed;
+    height: 60vh;
+    left: 35px;
+    border-left: 3px solid #9E91B7 ;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+body .bordure1{
+    height: 40vh;
+    left: 60px;
+    border-left: 3px solid #9E91B7 ;
+    position: fixed;
+    /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+}
+body .iconBordure1{
+    position: fixed;
+    left: 50px;
+    top: 235px;
+    margin-top: 15px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure1:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+body .iconBordure2{
+    position: fixed;
+    left: 50px;
+    top: 285px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure2:hover{
+    filter: invert(100%) sepia(12%) saturate(99%) hue-rotate(241deg) brightness(110%) contrast(101%);
+}
+body .iconBordure3{
+    position: fixed;
+    left: 50px;
+    top: 315px;
+}
+.iconBordure3:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+body .iconBordure4{
+    position: fixed;
+    left: 50px;
+    top: 350px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure4:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+.voirPlus{
+    width: 80px;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+/*animation fade in*/
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+/*PARTIE HEADER*/
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;   
+}
+.navbar a {
+    color: white;
+    font-size: 20px;
+    padding-top: 25px ;
+    padding-bottom: 10px;
+    font-family: "beyno";
+}
+.navbar .saynaLogo:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+/*effet hover de menu navbar lorsque le souris survol un element*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;  
+    list-style-type: none; 
+    padding-top: 30px; 
+    padding-left: 100px;
+}
+.menu li{
+    padding-left: 50px;
+}
+.menu a{
+    width: 60%;
+    padding-left: 10px;
+}
+.menu a:hover {
+    border-bottom: 1px solid white;
+}
+.prio a{
+    width: 10px;
+    height: 60%;
+    color: #9E91B7;
+    border-bottom: 1px solid white;  
+}
+.prio:hover{
+border-bottom: none;
+}
+/*partie bas du header*/
+.bas{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.bas .presentation{
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-top: 200px;   
+}
+
+.presentation h2{
+    padding-top: 20px;
+}
+.presentation .description{
+    width: 55%;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+.bas .imageBlack{
+    position: absolute;
+    left: 580px;
+    top: 50px;
+}
+.imageBlack img{
+    width: 53vw;
+    height: 100vh;
+}
+
+/*partie heroheader*/
+.heroHeader{
+    margin-left: 130px;
+    height: 60vh;
+    margin-top: 400px;
+    display: flex;
+    margin-bottom: 200px;
+    background-color: #021740;
+}
+.heroHeader img{
+    width: 16vw;
+    height: 60vh;
+}
+.heroHeader .killmonger{
+    width: 50vw;
+    padding-left: 40px;
+    display: flex;
+}
+.heroHeader .okoye{
+    width: 50vw;
+    display: flex;
+}
+.heroHeader .autre img{
+    height: 60vh;
+    width: 16vw;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.Description{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+
+
+/*PARTIE MAIN*/
+/*aligneent des paragraphes*/
+.ptext{
+    padding-top: 25px;
+}
+.corps{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.partLeft{
+    position: relative;
+    width: 150vw;
+    margin-left: 60px;
+}
+.partLeft .naissance{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.naissance h2{
+    padding-bottom: 20px;
+}
+.heroVengeur{
+    padding-left: 50px;
+}
+.heroVengeur h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.heroProtecteur{
+    padding-left: 50px;
+}
+.heroProtecteur h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/*partie droite*/
+.partRight{
+  width:50vw;
+  padding-left: 200px;
+}
+.partRight .black1{
+    position: absolute;
+    padding-left: 20px;
+    border-radius: 3px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.partRight .aproposBlack{
+    height: 250vh;
+    width: 32vw;
+    margin-top: 280px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    
+}
+.aproposBlack .titre{
+    padding-top: 380px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.aproposBlack .btn{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+.aproposBlack .btn button{
+    margin-right: 10px;
+    border-radius: 8px;
+    padding: 20px 8px;
+    background-color: #3D2DA6;
+    color: white;
+    border: none;
+}
+.aproposBlack .texte{
+    color: #021740;
+    padding-top: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*PARTIE FORMULAIRE*/
+.partFormulaire{
+    width: 100%;
+    height: 150vh;
+    background-image: url(ASSETS/Pantherhome7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.partFormulaire .formulaire{
+    position: relative;
+    top: 100px;
+    color: #021740;
+    width: 65%;
+    height: 75%;
+    border-radius: 230px;
+    padding-bottom: 150px;
+    background:linear-gradient(180deg,white, rgba(255, 255, 255, 0.041));
+    margin: 0 auto;
+}
+.formulaire .formu{
+    width: 90%;
+    margin: 0 auto;
+}
+.formulaire .intervention{
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.formulaire .contacter{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 46px;
+    font-weight: bold;
+}
+.formulaire .theInput{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+    
+}
+.formu input[type="text"]{
+    width: 100%;
+    width: 520px;
+    height: 56px;
+    padding: 20px 30px;
+    margin-top: 15px;
+    border-radius: 38px;
+    border: 1px solid #021740;
+    background-color: transparent;
+}
+.formu input[type="email"]{
+    width: 520px;
+    height: 56px;
+    display: block;
+    padding: 20px 30px;
+    margin-top: 15px;
+    border-radius: 38px;
+    background-color: transparent;
+    border: 1px solid #021740;
+}
+.formu textarea{
+    width: 520px;
+    margin-top: 15px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #021740;
+}
+.formu input[type="submit"]{
+    display: block;
+    margin: 15px auto;
+    padding: 20px 10px; 
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    background-color:#F2CEF2;
+    color: #021740;
+    font-weight: bold;
+    border: none;
+}
+.formu input[type="submit"]:hover{
+box-shadow: #021740 0px 0px 20px;
+}
+/*design des placeholder*/
+::-webkit-input-placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+::-moz-placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+::-ms-input-placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+::placeholder{
+    font-size: 18px;
+    color: #021740;
+}
+
+
+/*PARTIE FOOTER*/
+.allFoot{
+    background-image: url(ASSETS/back_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.allFoot .contentFoot{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    display: flex;
+
+}
+/*partie gauche de footer*/
+.contentFoot .Left{
+  width: 40%;
+  margin: 250px auto;
+  
+  /*animation fade in*/
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fade-in 1s forwards;
+}
+.contentFoot .Left :hover{
+    transform: scale(1.2);
+}
+.Left .logoC{
+    position: absolute;
+    padding-left: 60px;
+}
+.Left .logoM{
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+/*partie à droite du footer*/
+.contentFoot .Right{
+    width: 80%;
+    margin: 250px auto;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.Right .top{
+    width: 100%;
+    display: flex;   
+}
+.top .gauche{
+    padding-top: 10px;
+}
+.gauche .theLink{
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+}
+.theLink a{
+    color: white;
+    font-family:"cantarell";
+    font-weight: lighter;
+    padding-left: 10px;
+}
+.theLink a:hover{
+    border-bottom: 1px solid white;
+}
+.gauche .pagetxt{
+    font-size: "cantarell";
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+.gauche .pp{
+    font-size: 16px;
+}
+.top .droite{
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.droite .retrouver{
+    font-family:"cantarell" ;
+    font-size: 22px;
+}
+.droite .theLogo{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.theLogo img:hover{
+    transform: scale(1.2);
+}
+ .down{
+    position: absolute;
+    padding-top: 500px;
+    margin-left: 500px;
+    display: flex;
+    font-size: 22px;
+}
+.down p{
+    font-family: "cantarell";
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 50px;
+}
+.down .liste{
+    text-decoration: none;
+    display: flex;
+}
+.liste li{
+    padding-right: 15px;
+    margin-left: 15px;
+    font-family: "cantarell";
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:768px) {
+/*bas du header*/
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 22px;
+}
+p{
+    font-size: 13px;
+}
+
+/*partie scrollside*/
+body .bordure{
+    position: fixed;
+    height: 60vh;
+    left: 25px;
+    border-left: 2px solid #9E91B7 ;
+}
+body .bordure1{
+    height: 40vh;
+    left: 47px;
+    border-left: 2px solid #9E91B7 ;
+    position: fixed;
+}
+body .iconBordure1{
+    position: fixed;
+    left: 40px;
+    top: 275px;
+    margin-top: 15px;
+}
+body .iconBordure2{
+    position: fixed;
+    left: 40px;
+    top: 330px;
+}
+body .iconBordure3{
+    position: fixed;
+    left: 40px;
+    top: 365px;
+}
+body .iconBordure4{
+    position: fixed;
+    left: 40px;
+    top: 400px;
+}
+/*partie header*/
+.navbar{
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;   
+}
+/*effet hover de menu navbar lorsque le souris survol un element*/
+.menu li{
+    padding-left: 20px;
+}
+.menu a{
+    width: 40%;
+    padding-left: 10px;
+}
+.bas{
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.bas .presentation{
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-top: 800px;   
+}
+
+.presentation h2{
+    padding-top: 20px;
+}
+.presentation .description{
+    width: 55%;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+.bas .imageBlack{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+.imageBlack img{
+    width: 53vw;
+    height: 100vh;
+}
+
+/*partie heroheader*/
+.heroHeader{
+    width: 60%;
+    height: auto;
+    margin-top: 200px;
+    display: inline-block;
+    margin-bottom: 200px;
+    background-color: #021740;
+}
+.heroHeader img{
+    width: 100%;
+    height: 40vh;
+}
+.heroHeader .killmonger{
+    padding-left: 40px;
+    display: inline-block;
+}
+.heroHeader .okoye{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 50vw;
+    display: inline-block;
+}
+.heroHeader .autre img{
+    height: 40vh;
+    width: 80%;
+    padding-left: 40px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.Description{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+
+
+
+
+/*partie main*/
+.ptext{
+    padding-top: 25px;
+}
+.corps{
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+}
+.partLeft{
+   width: 88%;
+   margin: 0 auto;
+}
+.partLeft .naissance{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.naissance h2{
+    padding-bottom: 20px;
+}
+.heroVengeur{
+    padding-left: 50px;
+}
+.heroVengeur h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.heroProtecteur{
+    padding-left: 50px;
+}
+.heroProtecteur h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/*partie droite*/
+.partRight{
+  padding-top: 100px;
+  width:100%;
+  padding-left: 100px;
+}
+.partRight .black1{
+    padding-top: 100px;
+    border-radius: 3px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.black1 img{
+    width: 35vw;
+    height: 55vh;
+}
+.partRight .aproposBlack{
+    height: 100vh;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    
+}
+.aproposBlack .titre{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.aproposBlack .btn{
+    display: inline-block;
+    padding-top: 10px;
+}
+.aproposBlack .btn button{
+    border-radius: 8px;
+    padding: 5px 5px;
+    background-color: #3D2DA6;
+    color: white;
+    border: none;
+}
+.aproposBlack .texte{
+    color: #021740;
+    padding-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+*PARTIE FORMULAIRE*/
+.partFormulaire{
+    width: 100%;
+    height: 150vh;
+    background-image: url(ASSETS/Pantherhome7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.partFormulaire .formulaire{
+    position: relative;
+    top: 100px;
+    color: #021740;
+    width: 60%;
+    margin: 0 auto;
+    height: 60%;
+    border-radius: 75px;
+    padding-bottom: 150px;
+    background:linear-gradient(180deg,white, rgba(255, 255, 255, 0.041));   
+}
+.formulaire .formu{
+    width: 88%;
+    margin: 0 auto;
+}
+.formulaire .intervention{
+    padding-top: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.formulaire .contacter{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.formulaire .theInput{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+    
+}
+.formu input[type="text"]{
+    width: 100%;
+}
+.formu input[type="email"]{
+    width: 100%;
+}
+.formu textarea{
+    width: 100%;
+}
+
+
+
+
+/*PARTIE FOOTER*/
+.allFoot{
+    background-image: url(ASSETS/back_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.allFoot .contentFoot{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    display: inline-block;
+
+}
+/*partie gauche de footer*/
+.contentFoot .Left{
+  width: 80%;
+  margin: 0 auto; 
+  
+}
+.Left .logoC{
+    position: absolute;
+    padding-left: 60px;
+}
+.Left .logoM{
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+/*partie à droite du footer*/
+.contentFoot .Right{
+    width: 88%;
+    margin: 250px auto;
+    text-align: center;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.Right .top{
+    display: inline-block;   
+}
+.top .gauche{
+    width: 90%;
+    padding-left: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+.gauche .pagetxt{
+    font-size: "cantarell";
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.top .droite{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.droite .retrouver{
+    font-family:"cantarell" ;
+    font-size: 22px;
+}
+.droite .theLogo{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.theLogo img:hover{
+    transform: scale(1.2);
+}
+ .down{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 100px;
+    display: flex;
+}
+.down p{
+    font-family: "cantarell";
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.down .liste{
+    text-decoration: none;
+    display: flex;
+}
+.liste li{
+    padding-right: 15px;
+    margin-left: 15px;
+    font-family: "cantarell";
+    font-size: 13px;
+}
+    
+} 
