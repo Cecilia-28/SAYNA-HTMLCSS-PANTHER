@@ -1,0 +1,725 @@
+@font-face {
+    font-family: "cantarell";
+    src: url("./police/Cantarell-Regular.ttf");
+}
+@font-face {
+    font-family: "beyno";
+    src: url("./police/BEYNO.ttf");
+}
+@font-face {
+    font-family:"panthera";
+    src: url("./police/panthera.otf");
+}
+@font-face {
+    font-family: "wakandaF";
+    src: url("./police/wakanda-forever-regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    
+    background-image: url("ASSETS/arriere_plan.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+}
+/*animation fade in*/
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+h1{
+    font-family: "beyno";
+    color: #9E91B7 ;
+    font-size: 68px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+}
+h2{
+    font-family: "beyno";
+    font-weight: lighter;
+    color: #9E91B7 ;
+    font-size: 32px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+}
+
+p{
+    font-family: "cantarell";
+    font-size: 16px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+}
+/*design des scrollsiders*/
+body .bordure{
+    position: fixed;
+    height: 60vh;
+    left: 35px;
+    border-left: 3px solid #9E91B7 ;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+body .bordure1{
+    height: 40vh;
+    left: 60px;
+    border-left: 3px solid #9E91B7 ;
+    position: fixed;
+    /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+}
+body .iconBordure1{
+    position: fixed;
+    left: 50px;
+    top: 235px;
+    margin-top: 15px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure1:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+body .iconBordure2{
+    position: fixed;
+    left: 50px;
+    top: 285px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure2:hover{
+    filter: invert(100%) sepia(12%) saturate(99%) hue-rotate(241deg) brightness(110%) contrast(101%);
+}
+body .iconBordure3{
+    position: fixed;
+    left: 50px;
+    top: 315px;
+}
+.iconBordure3:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+body .iconBordure4{
+    position: fixed;
+    left: 50px;
+    top: 350px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.iconBordure4:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+
+/*PARTIE HEADER*/
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;   
+}
+.navbar a {
+    color: white;
+    font-size: 20px;
+    padding-top: 25px ;
+    padding-bottom: 10px;
+    font-family: "beyno";
+}
+.navbar .saynaLogo:hover{
+    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+}
+/*effet hover de menu navbar lorsque le souris survol un element*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;  
+    list-style-type: none; 
+    padding-top: 30px; 
+    padding-left: 100px;
+}
+.menu li{
+    padding-left: 50px;
+}
+.menu a{
+    width: 60%;
+    padding-left: 10px;
+}
+.menu a:hover {
+    border-bottom: 1px solid white;
+}
+.prio a{
+    width: 10px;
+    height: 60%;
+    color: #9E91B7;
+    border-bottom: 1px solid white;  
+}
+.prio:hover{
+border-bottom: none;
+}
+
+/*design de la partie bas du header*/
+.bas{
+    background-position: top center;
+    background-image: url("ASSETS/Pantherwakanda1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bas .presentation1{
+    width: 90%;
+    padding: 500px 200px;
+}
+.presentation1 h2{
+    font-family: "wakandaF";
+}
+.presentation1 .texte{
+    padding-top: 50px;
+    width: 60%;
+}
+
+/*partie milieu*/
+.milieu{
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.milieu p{
+    text-align: justify;
+}
+.milieu .puma{
+    opacity: 40%;
+    top: 1225px;
+    position: absolute;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.puma img{
+    width: 80vw;
+    height: 80vh;
+}
+.milieu .milieuLeft{
+}
+.milieuLeft .para{
+    text-align: justify;
+    padding-top: 25px;
+}
+.milieuLeft h2{
+    padding-top: 75px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+.milieu .origin{
+    padding-top: 0;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.milieu .lien{
+    margin-top: 80px;
+    height: 200px;
+    margin-bottom: 20px ;
+    background-color: #3D2DA6;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.lien .Lien{
+    text-align: justify ;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.milieu .milieuRight{
+    width: 53%;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+.milieu .origin{
+    padding-top: 0;
+}
+.milieuRight .para{
+    text-align: justify;
+    padding-top: 20px;
+}
+.milieuRight h2{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+.milieuRight .equipe{
+    margin-top: 45px;
+    margin-bottom: 0px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.equipe img{
+    width: 40vw;
+    height: 50vh;
+}
+
+
+
+
+
+/*PARTIE FOOTER*/
+.allFoot{
+    background-image: url(ASSETS/back_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.allFoot .contentFoot{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    display: flex;
+
+}
+/*partie gauche de footer*/
+.contentFoot .Left{
+  width: 40%;
+  margin: 250px auto;
+  
+  /*animation fade in*/
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fade-in 1s forwards;
+}
+.contentFoot .Left :hover{
+    transform: scale(1.2);
+}
+.Left .logoC{
+    position: absolute;
+    padding-left: 60px;
+}
+.Left .logoM{
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+/*partie à droite du footer*/
+.contentFoot .Right{
+    width: 80%;
+    margin: 250px auto;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.Right .top{
+    width: 100%;
+    display: flex; 
+    padding-left: 100px;  
+}
+.top .gauche{
+    padding-top: 10px;
+}
+.gauche .theLink{
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+}
+.theLink a{
+    color: white;
+    font-family:"cantarell";
+    font-weight: lighter;
+    padding-left: 10px;
+}
+.theLink a:hover{
+    border-bottom: 1px solid white;
+}
+.gauche .pagetxt{
+    font-size: "cantarell";
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+.gauche .pp{
+    font-size: 16px;
+}
+.top .droite{
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.droite .retrouver{
+    font-family:"cantarell" ;
+    font-size: 22px;
+}
+.droite .theLogo{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.theLogo img:hover{
+    transform: scale(1.2);
+}
+ .down{
+    position: absolute;
+    padding-top: 150px;
+    margin-left: 50px;
+    display: flex;
+    font-size: 22px;
+}
+.down p{
+    font-family: "cantarell";
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 50px;
+}
+.down .liste{
+    text-decoration: none;
+    display: flex;
+}
+.liste li{
+    padding-right: 15px;
+    margin-left: 15px;
+    font-family: "cantarell";
+    font-size: 13px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:768px) {
+    /*bas du header*/
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    p{
+        font-size: 13px;
+    }
+    
+    /*partie scrollside*/
+    body .bordure{
+        position: fixed;
+        height: 60vh;
+        left: 25px;
+        border-left: 2px solid #9E91B7 ;
+    }
+    body .bordure1{
+        height: 40vh;
+        left: 47px;
+        border-left: 2px solid #9E91B7 ;
+        position: fixed;
+    }
+    body .iconBordure1{
+        position: fixed;
+        left: 40px;
+        top: 275px;
+        margin-top: 15px;
+    }
+    body .iconBordure2{
+        position: fixed;
+        left: 40px;
+        top: 330px;
+    }
+    body .iconBordure3{
+        position: fixed;
+        left: 40px;
+        top: 365px;
+    }
+    body .iconBordure4{
+        position: fixed;
+        left: 40px;
+        top: 400px;
+    }
+    /*partie header*/
+    .navbar{
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        text-decoration: none;   
+    }
+    /*effet hover de menu navbar lorsque le souris survol un element*/
+    .menu li{
+        padding-left: 20px;
+    }
+    .menu a{
+        width: 40%;
+        padding-left: 10px;
+    }
+    .bas{
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        /*animation fade in*/
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: fade-in 1s forwards;
+    }
+    .bas .presentation{
+        width: 80%;
+        margin: 0 auto;
+        padding-right: 30px;
+        padding-top: 800px;   
+    }
+    
+    .presentation h2{
+        padding-top: 20px;
+    }
+    .presentation .description{
+        width: 55%;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+    .bas .imageBlack{
+        position: absolute;
+        left: 150px;
+        top: 50px;
+    }
+    .imageBlack img{
+        width: 53vw;
+        height: 100vh;
+    }
+    
+    /*design de la partie bas du header*/
+.bas{
+    background-position: top center;
+    background-image: url("ASSETS/Pantherwakanda1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bas .presentation1{
+    width: 95%;
+    padding: 300px 100px;
+}
+.presentation1 h2{
+    font-size: 26px;
+    padding-top: 10px;
+    font-family: "wakandaF";
+}
+.presentation1 .texte{
+    padding-top: 50px;
+    width: 65%;
+    text-align: justify;
+}
+
+
+
+/*partie milieu*/
+.milieu{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.milieu p{
+    text-align: justify;
+}
+.milieu .puma{
+    opacity: 40%;
+    top: 825px;
+    position: absolute;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.puma img{
+    width: 80vw;
+    height: 80vh;
+}
+.milieu .milieuLeft{
+}
+.milieuLeft .para{
+    text-align: justify;
+    padding-top: 25px;
+}
+.milieuLeft h2{
+    padding-top: 75px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+.milieu .origin{
+    padding-top: 0;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.milieu .lien{
+    margin-top: 80px;
+    height: 200px;
+    margin-bottom: 20px ;
+    background-color: #3D2DA6;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.lien .Lien{
+    text-align: justify ;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.milieu .milieuRight{
+    width: 53%;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+.milieu .origin{
+    padding-top: 0;
+}
+.milieuRight .para{
+    text-align: justify;
+    padding-top: 10px;
+}
+.milieuRight h2{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+.milieuRight .equipe{
+    margin-top: 45px;
+    margin-bottom: 0px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.equipe img{
+    width: 40vw;
+    height: 35vh;
+}
+
+
+
+    /*PARTIE FOOTER*/
+ .allFoot{
+    background-image: url(ASSETS/back_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+ }
+ .allFoot .contentFoot{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    display: inline-block;
+
+ }
+/*partie gauche de footer*/
+ .contentFoot .Left{
+  width: 60%;
+  padding-top: 100px;
+  margin: 0 auto; 
+  
+ }
+ .Left .logoC{
+    position: absolute;
+    padding-left: 60px;
+ }
+ .Left .logoM{
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 150px;
+ }
+/*partie à droite du footer*/
+ .contentFoot .Right{
+    width: 88%;
+    margin: 250px auto;
+    text-align: center;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+ }
+ .Right .top{
+    display: inline-block;   
+ }
+ .top .gauche{
+    width: 90%;
+    padding-left: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+ }
+ .gauche .pagetxt{
+    font-size: "cantarell";
+    padding-bottom: 10px;
+    font-size: 22px;
+ }
+
+ .top .droite{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+ }
+ .droite .retrouver{
+    font-family:"cantarell" ;
+    font-size: 22px;
+ }
+ .droite .theLogo{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+ }
+ .theLogo img:hover{
+    transform: scale(1.2);
+ }
+ .down{
+    width: 100%;
+    padding-top: 50px;
+    margin-left: 150px;
+    display: flex;
+ }
+ .down p{
+    font-family: "cantarell";
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+ .down .liste{
+    text-decoration: none;
+    display: flex;
+ }
+ .liste li{
+    padding-right: 10px;
+    margin-left: 10px;
+    font-family: "cantarell";
+    font-size: 12px;
+ }
+    
+} 
