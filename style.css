@@ -75,8 +75,7 @@ body .bordure1{
 body .iconBordure1{
     position: fixed;
     left: 50px;
-    top: 235px;
-    margin-top: 15px;
+    top: 250px;
     /*animation fade in*/
     opacity: 0;
     transform: translateX(-100%);
@@ -100,7 +99,7 @@ body .iconBordure2{
 body .iconBordure3{
     position: fixed;
     left: 50px;
-    top: 315px;
+    top: 320px;
 }
 .iconBordure3:hover{
     filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
@@ -115,11 +114,11 @@ body .iconBordure4{
     animation: fade-in 1s forwards;
 }
 .iconBordure4:hover{
-    filter: invert(64%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
+    filter: invert(65%) sepia(25%) saturate(347%) hue-rotate(219deg) brightness(90%) contrast(86%);
 }
 .voirPlus{
     width: 80px;
-    padding-top: 20px;
+    padding-top: 10px;
     border-bottom: 1px solid white;
 }
 
@@ -232,12 +231,10 @@ border-bottom: none;
     height: 60vh;
 }
 .heroHeader .killmonger{
-    width: 50vw;
-    padding-left: 40px;
+    padding-left: 30px;
     display: flex;
 }
 .heroHeader .okoye{
-    width: 50vw;
     display: flex;
 }
 .heroHeader .autre img{
